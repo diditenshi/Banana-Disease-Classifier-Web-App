@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       <h1>Banana Plant Disease Classifier 🍀</h1>
-    <p>Built with ❤️ for Farmers using (Tensorflow, Tensorflow.js, Python, Javascript, HTML5)</p>
+  <div>
+      <div class="container">
+        <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Banana Plant Disease Classifier</b></h1>
+                <p class="lead" style="font-weight: 500;color: black;">This application is created using Tensorflow, Tensorflow.js, Python, Javascript, HTML5</p>
+            </div>
+        </div>
     <hr>
-
-
     <div class="upload-btn-wrapper">
         <button class="btn upload-file font-weight-500">
             <span class="upload-btn">
                 <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
-                <p id="choose-text-1">Choose Image of Crop leaf</p>
+                <p id="choose-text-1">Choose an image of a banana leaf</p>
             </span>
             <span class="upload-select-button" id="blankFile-1">
                 *Supports .png, .jpg, .jpeg, .jfif
@@ -39,13 +43,13 @@
         <div class="box box-result">
             <div class="init_status"></div>
             <div>
-                <h2>Your Plant is infected with :- <span class="pred_class"></span></h2>
-                
+                <h2>The banana plant is infected with :- <span class="pred_class"></span></h2>
+
             </div>
             <div class="accuracy">
                 <div class="progress" id="progress">
                     <div class="inner">
-                      
+
                     </div>
                   </div>
 
@@ -53,6 +57,8 @@
             <p style="padding : 10px;"> CONFIDENCE : <b><span class="confidence"></span></b> %</p>
         </div>
     </div>
+  </div>
+</div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
